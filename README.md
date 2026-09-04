@@ -39,3 +39,15 @@ Os atributos de qualidade mais críticos para o aplicativo são:
 - **Portabilidade:** permitir que o sistema possa ser utilizado em diferentes dispositivos.
 
 Dessa forma, a divisão do sistema em módulos e a preocupação com a qualidade do software tornam o desenvolvimento mais organizado e seguro. Para um aplicativo de delivery de comida caseira, esses princípios são importantes para garantir o correto funcionamento dos pedidos, pagamentos e entregas, além de facilitar futuras melhorias e o crescimento do sistema.
+
+
+**Manutenibilidade e evolução:**
+
+O tipo de manutenção mais provável de acontecer com este sistema nos primeiros anos é a manutenção evolutiva. Como o aplicativo de delivery de comida caseira tem um escopo inicial planejado para até 300 usuários, à medida que a plataforma se estabilizar e o número de fornecedores e clientes crescer, o sistema precisará se adaptar para oferecer novas facilidades e acompanhar as demandas do mercado.
+Exemplo concreto: Adicionar um sistema de avaliação dos pedidos, aceitar novas formas de pagamento (como PIX e vale-refeição), incluir um mapa com GPS para os entregadores, adicionar uma opção de pedido aos favoritos e etc.
+
+**Boas práticas gerais:**
+Para organizar o trabalho da equipe, aplicaremos as três práticas da seguinte forma:
+- Documentar decisões : Registrar como funcionam as regras principais (ex: como é calculada a taxa de entrega) e as escolhas de tecnologia (ex: qual banco de dados usar).
+- Versionamento com Git: Usar o GitHub para salvar o código com segurança. Cada pessoa fará o trabalho em uma branch, e usara mensagens claras do que foi feito.
+- Padronização de nomes e formatação: Adotar regras fáceis para o código, como usar a primeira letra minúscula para variáveis, Usaremos ferramentas automáticas para que o visual do código fique sempre padronizado, independentemente de quem escreveu.
