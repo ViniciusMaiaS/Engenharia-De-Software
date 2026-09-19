@@ -35,19 +35,19 @@
 | RF-03 | O sistema deve  exigir autenticação do usuário/lojista por meio de um email válido.|
 | RF-04 | o sistema deve armazenar os dados de cadastro e pagamento do usuário para pedidos futuros.|
 | RF-05 | O sistema deverá calcular o frete de acordo com a localidade, limite até 10km.|
-| RF-06 | O sistema deverá aceitar a  de novos itens ao cardápiod digital.|
-| RF-07 | O sistema deverá está em confomidade com a Nota Técnica Decreto nº 35.061/2022,emissão nota fiscal modelo 65.|
+| RF-06 | O sistema deve aceitar a  inclusão de novos itens ao cardápiod digital.|
+| RF-07 | O sistema deve estar em confomidade com a Nota Técnica Decreto nº 35.061/2022,para emissão da NFC-e modelo 65.|
 
 ## 4. Requisitos Não-Funcionais
 
 | ID | Categoria | Descrição |
 |---|---|---|
 | RNF-01 | Desempenho | A atualização de localização do entregador no mapa deve ocorrer com latência máxima de 5 segundos. |
-| RNF-02 | | |
-| RNF-03 | | |
-| RNF-04 | | |
-| RNF-05 | | |
-| RNF-06 | | |
+| RNF-02 | Segurança| Acesso as contas de usuários clientes ou lojista, deve sempre exigir autenticçaõ por e-mail e senha. |
+| RNF-03 | Confiabilidade| o sistema deve manter-se disponível no mínimo 95% do horário de operação. |
+| RNF-04 | Manutenibilidade | Alterações realizadas no cardápio pelo lojista devem ser refletidas para os usuários em até 30 segundos. |
+| RNF-05 | Usabilidade | O usuário deve conseguir finalizar um pedido em no máximo 4 etapas. |
+| RNF-06 | Portabilidade | O sistema deve funcionar nos principais navegadores comerciais, Chrome, Mozila e Edge .|
 
 **Categorias possíveis:** Desempenho · Confiabilidade · Usabilidade · Segurança · Manutenibilidade · Portabilidade
 
