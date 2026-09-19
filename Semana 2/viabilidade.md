@@ -67,15 +67,14 @@ _O benefício de construir esse sistema justifica o custo de construí-lo?_
 
 ## 5. Viabilidade Operacional
 
-_O sistema seria de fato aceito e usado pelas pessoas envolvidas, no dia a dia real?_
+O sistema ele acaba se tornando viável porque no dia a dia na rotina de todos os digamos assim os usuários desse tipo de aplicativo de delivery, ele funciona diariamente e reduz bem assim a necessidade de Treinamento até mesmo para utilização da plataforma então ele é muito viado pela tratamento pela alta usabilidade que ele tem 
 
-- Os usuários finais têm familiaridade com esse tipo de sistema, ou vai exigir adaptação grande?
-- O sistema muda algum processo atual de um jeito que pode gerar resistência?
-- Existe algum grupo de stakeholders que provavelmente vai resistir à mudança? Como lidar com isso?
+Esse nosso tipo de sistema é os clientes usuários clientes poderão realizar pedidos poderá acompanhar a sua entrega é receber notificação do status das do seu das suas compras idêntico ao que acontece já no seu aplicativo conhecidos do mercado Além do mais o segundo tipo de usuário os Lojistas ou estabelecimento também poderão gerenciar seus cardápios e pedidos de maneira centralizada 
 
-> _(escrever aqui)_
+É alguns requisitos funcionais que especificamos aqui como o 01 e 02 eles vão até auxiliar na comunicação que os usuários tem com sua com sua entrega durante o processo né e o 06, queremos dizer que ele vai acabar facilitando principalmente a atualização de produtos disponíveis evitando que sejam feito é pedidos para produtos desatualizados é dessa forma não nesta dessa forma e peso que já foi comentado da grande usabilidade que tem o sistema cremos que clientes e fornecedores e nem mesmo os entregadores terão problema em não saber utilizar o sistema.
 
----
+Como todo o grande app de delivery a gente sabe que pode enfrentar sim desafios operacionais né como por exemplo dificuldade um fornecedor mesmo que somente Inicial na utilização da sociedade até mesmo do não sei do próprio do próprio entregador também mas é assim que a gente vai procurar mitigar isso e reduzir a bem próximo de zero com uma  interface simples e intuitiva e que tenha já algo parecido no mercado para utilizar a questão do que os clientes de pedido fornecedores também entregadores  já estão acostumados
+
 
 ## 6. Conclusão
 
