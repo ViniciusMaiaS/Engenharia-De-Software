@@ -24,9 +24,7 @@
 
 ## 2. O Sistema
 
-Descrevam em 2 a 3 frases o sistema fictício que o grupo adotou.
-
-> _(O aplicativo de delivery de comida caseira possui porte entre pequeno e médio, pois envolve o gerenciamento de clientes, estabelecimentos (Fornecedores de Comida), entregadores, pedidos, pagamentos e entregas.)_
+ aplicativo de delivery de comida caseira possui porte entre pequeno e médio, pois envolve o gerenciamento de clientes, estabelecimentos (Fornecedores de Comida), entregadores, pedidos, pagamentos e entregas.
 
 ## 3. Requisitos Funcionais
 
@@ -44,7 +42,7 @@ Descrevam em 2 a 3 frases o sistema fictício que o grupo adotou.
 
 | ID | Categoria | Descrição |
 |---|---|---|
-| RNF-01 | | |
+| RNF-01 | Desempenho | A atualização de localização do entregador no mapa deve ocorrer com latência máxima de 5 segundos. |
 | RNF-02 | | |
 | RNF-03 | | |
 | RNF-04 | | |
