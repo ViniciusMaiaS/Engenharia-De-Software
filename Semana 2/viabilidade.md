@@ -38,11 +38,11 @@ O aplicativo de delivery de comida caseira possui porte entre pequeno e médio, 
 | ID | Categoria | Descrição |
 |---|---|---|
 | RNF-01 | Desempenho | A atualização de localização do entregador no mapa deve ocorrer com latência máxima de 5 segundos. |
-| RNF-02 |  |  |
-| RNF-03 |  |  |
-| RNF-04 |  |  |
-| RNF-05 |  |  |
-| RNF-06 |  |  |
+| RNF-02 | Segurança| O sistema deve garantir que o acesso às contas de usuários e lojistas ocorra somente após autenticação válida. |
+| RNF-03 | Confiabilidade| o sistema deve manter-se disponível no mínimo 95% do horário de operação. |
+| RNF-04 | Manutenibilidade | Alterações realizadas no cardápio pelo lojista devem ser refletidas para os usuários em até 30 segundos. |
+| RNF-05 | Usabilidade | O usuário deve conseguir finalizar um pedido em no máximo 4 etapas. |
+| RNF-06 | Portabilidade | O sistema deve funcionar nos principais navegadores comerciais, Chrome, Mozila e Edge .|
 
 ---
 
@@ -63,7 +63,12 @@ _O benefício de construir esse sistema justifica o custo de construí-lo?_
 - Qual o benefício esperado para quem vai usar ou pagar pelo sistema?
 - O benefício parece compensar o investimento?
 
-> _(escrever aqui)_
+O desenvolvimento do sistema terá como principais custos a programação, manutenção, hospedagem do sistema, banco de dados e utilização de serviços externos, como APIs de mapas e geolocalização. Inicialmente, por se tratar de um projeto acadêmico, esses custos podem ser reduzidos utilizando ferramentas e serviços gratuitos ou de baixo custo.
+
+O principal benefício esperado é oferecer uma plataforma que facilite o gerenciamento de pedidos, cardápios, entregas e comunicação entre clientes, lojistas e entregadores. Para os estabelecimentos, o sistema pode contribuir para uma melhor organização dos pedidos e redução de erros, enquanto os clientes terão maior praticidade para realizar e acompanhar suas compras.
+
+Dessa forma, considerando os benefícios proporcionados e a possibilidade de utilizar tecnologias de baixo custo, o investimento necessário para desenvolver e manter o sistema pode ser compensado pelos benefícios gerados, tornando o projeto economicamente viável.
+
 
 ## 5. Viabilidade Operacional
 
@@ -80,8 +85,8 @@ Como todo o grande app de delivery a gente sabe que pode enfrentar sim desafios 
 
 Marquem uma opção e justifiquem em 2 a 3 frases.
 
-- [ ] Viável
+- [✔️] Viável
 - [ ] Viável com ressalvas
 - [ ] Não viável
 
-> _(justificativa aqui)_
+O sistema é viável, pois utiliza tecnologias acessíveis e atende a uma necessidade comum de clientes e estabelecimentos. Os principais desafios técnicos podem ser solucionados com ferramentas e APIs disponíveis no mercado.

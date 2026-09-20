@@ -32,7 +32,7 @@
 |---|---|
 | RF-01 | O sistema deve enviar uma notificação ao usuário confirmando o pedido.|
 | RF-02 | O sistema deve enviar notificações atualizando o status do pedido.|
-| RF-03 | O sistema deve  exigir autenticação do usuário/lojista por meio de um email válido.|
+| RF-03 | O sistema deve exigir autenticação de usuários e lojistas por e-mail e senha cadastrados. |
 | RF-04 | o sistema deve armazenar os dados de cadastro e pagamento do usuário para pedidos futuros.|
 | RF-05 | O sistema deverá calcular o frete de acordo com a localidade, limite até 10km.|
 | RF-06 | O sistema deve aceitar a  inclusão de novos itens ao cardápiod digital.|
@@ -43,36 +43,33 @@
 | ID | Categoria | Descrição |
 |---|---|---|
 | RNF-01 | Desempenho | A atualização de localização do entregador no mapa deve ocorrer com latência máxima de 5 segundos. |
-| RNF-02 | Segurança| Acesso as contas de usuários clientes ou lojista, deve sempre exigir autenticçaõ por e-mail e senha. |
+| RNF-02 | Segurança| O sistema deve garantir que o acesso às contas de usuários e lojistas ocorra somente após autenticação válida. |
 | RNF-03 | Confiabilidade| o sistema deve manter-se disponível no mínimo 95% do horário de operação. |
 | RNF-04 | Manutenibilidade | Alterações realizadas no cardápio pelo lojista devem ser refletidas para os usuários em até 30 segundos. |
 | RNF-05 | Usabilidade | O usuário deve conseguir finalizar um pedido em no máximo 4 etapas. |
 | RNF-06 | Portabilidade | O sistema deve funcionar nos principais navegadores comerciais, Chrome, Mozila e Edge .|
 
-**Categorias possíveis:** Desempenho · Confiabilidade · Usabilidade · Segurança · Manutenibilidade · Portabilidade
-
-<!--
-Exemplo de como preencher (apagar esta linha e o exemplo abaixo depois):
-RNF-01 | Desempenho | A confirmação da reserva deve ser processada em no máximo três segundos, mesmo em horário de pico.
--->
-
 ---
 
 ## 5. Requisitos Relacionados
 
-Indiquem, quando fizer sentido, qual requisito não-funcional qualifica qual requisito funcional (nem todo RNF precisa estar amarrado a um único RF, alguns se aplicam ao sistema como um todo).
-
 | RF | RNF relacionado(s) |
 |---|---|
-| RF-01 | |
-| RF-02 | |
+| RF-01 | RNF-03 |
+| RF-02 | RNF-01, RNF-03 |
+| RF-03 | RNF-02 |
+| RF-04 | RNF-02 |
+| RF-05 | RNF-03 |
+| RF-06 | RNF-04|
+| RF-07 | RNF-03|
+
 
 ---
 
-### Checklist antes de entregar
+### Checklist Final
 
-- [ ] Cada requisito é **verificável** (dá pra testar se foi atendido ou não)
-- [ ] Cada requisito é **não ambíguo** (só uma leitura possível)
-- [ ] Cada requisito é **atômico** (descreve uma coisa só)
-- [ ] Nenhum requisito descreve uma **solução de projeto** (tecnologia, banco de dados, biblioteca específica)
+- [✔️] Cada requisito é **verificável** (dá pra testar se foi atendido ou não)
+- [✔️] Cada requisito é **não ambíguo** (só uma leitura possível)
+- [✔️] Cada requisito é **atômico** (descreve uma coisa só)
+- [✔️] Nenhum requisito descreve uma **solução de projeto** (tecnologia, banco de dados, biblioteca específica)
 
