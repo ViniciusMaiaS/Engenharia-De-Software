@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2026-09-27T00:00:00.000Z" agent="5.0" version="21.0.0" type="device">
+  <diagram id="diagrama_classes" name="Diagrama de Classes">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" pageBackgroundColor="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="cliente" value="Cliente&#10;--&#10;- idCliente: int&#10;- nome: String&#10;- email: String&#10;- senha: String&#10;- endereco: String&#10;- dadosPagamentoGuardados: String&#10;--&#10;+ autenticar(): boolean&#10;+ fazerPedido(): void" style="swipeable=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;pointerEvents=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;verticalAlign=top;shape=mxgraph.uml.compositeKind;part=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="220" height="170" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lojista" value="Lojista&#10;--&#10;- idLojista: int&#10;- nomeEstabelecimento: String&#10;- email: String&#10;- senha: String&#10;--&#10;+ autenticar(): boolean&#10;+ adicionarItemCardapio(): void" style="swipeable=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;pointerEvents=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;verticalAlign=top;shape=mxgraph.uml.compositeKind;part=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="220" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pedido" value="Pedido&#10;--&#10;- idPedido: int&#10;- dataHora: Date&#10;- status: String&#10;- valorTotal: double&#10;- distanciaKm: double&#10;--&#10;+ calcularFrete(): double&#10;+ atualizarStatus(): void&#10;+ enviarNotificacao(): void&#10;+ emitirNFCe(): void" style="swipeable=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;pointerEvents=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;verticalAlign=top;shape=mxgraph.uml.compositeKind;part=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="220" height="190" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cardapio" value="Cardapio&#10;--&#10;- idItem: int&#10;- nome: String&#10;- descricao: String&#10;- preco: double&#10;- disponivel: boolean&#10;--&#10;+ atualizarDisponibilidade(): void" style="swipeable=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;pointerEvents=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;verticalAlign=top;shape=mxgraph.uml.compositeKind;part=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="360" width="220" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pagamento" value="Pagamento&#10;--&#10;- idPagamento: int&#10;- valor: double&#10;- formaPagamento: String&#10;- statusPagamento: String&#10;--&#10;+ processarPagamento(): boolean" style="swipeable=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;pointerEvents=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;verticalAlign=top;shape=mxgraph.uml.compositeKind;part=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="80" width="220" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="entregador" value="Entregador&#10;--&#10;- idEntregador: int&#10;- nome: String&#10;- localizacaoAtual: String&#10;--&#10;+ atualizarLocalizacao(): void&#10;+ aceitarEntrega(): void" style="swipeable=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;pointerEvents=1;whiteSpace=wrap;html=1;align=left;spacingLeft=5;verticalAlign=top;shape=mxgraph.uml.compositeKind;part=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="360" width="220" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel1" value="realiza&#10;1                  0..*" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cliente" target="pedido">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel2" value="possui&#10;1                  1..*" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pedido" target="cardapio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel3" value="gera&#10;1                  1" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pedido" target="pagamento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel4" value="gerencia&#10;1                  1..*" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lojista" target="cardapio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel5" value="entrega&#10;0..1              0..*" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="entregador" target="pedido">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
