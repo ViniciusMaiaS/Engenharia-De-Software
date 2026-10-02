@@ -32,30 +32,30 @@ O sistema foi desenvolvido considerando a necessidade de organizar essas ativida
 
 O sistema exige Engenharia de Software devido à necessidade de organizar seu desenvolvimento e reduzir problemas como falhas em pedidos, inconsistências de pagamento, dificuldade de manutenção e atrasos. A modularidade é aplicada pela divisão do sistema em módulos de autenticação, clientes, estabelecimentos, pedidos, pagamentos, entregas e administração. A qualidade é considerada por meio de atributos como funcionalidade, confiabilidade, usabilidade, eficiência, manutenibilidade e portabilidade. A manutenibilidade permite realizar evoluções no sistema, como adicionar avaliações, novos meios de pagamento, mapa com GPS e favoritos. As boas práticas incluem documentar decisões, utilizar Git/GitHub com branches e mensagens claras, além de padronizar nomes e formatação.
 
-🔗 [semana1/](Semana 1/README.md)
+🔗 [semana1/](Semana%201/README.md)
 
 ## 4. Requisitos e Viabilidade (Semana 2)
 
 Na Semana 2 foram definidos os requisitos funcionais e não-funcionais do sistema, abrangendo funcionalidades como notificações de pedidos, autenticação, cadastro de estabelecimentos, cálculo da taxa de entrega, gerenciamento do cardápio e emissão de NFC-e. Entre os requisitos não-funcionais estão desempenho, segurança, confiabilidade, manutenibilidade, usabilidade e portabilidade. O estudo de viabilidade concluiu que o sistema é viável nas dimensões técnica, econômica e operacional, destacando como principal desafio técnico o rastreamento da localização do entregador em tempo real e o cálculo da distância por rotas.
 
-🔗 [semana2/requisitos.md](Semana 2/template_requisitos.md) · [semana2/viabilidade.md](Semana 2/viabilidade.md)
+🔗 [semana2/requisitos.md](Semana%202/template_requisitos.md) · [semana2/viabilidade.md](Semana%202/viabilidade.md)
 
 ## 5. Modelagem UML (Semana 3)
 
 O diagrama de casos de uso apresenta os principais atores envolvidos no sistema, como Cliente, Lojista e Entregador, além das interações entre esses atores e as funcionalidades do sistema.
-🔗 [casos_de_uso.png](Semana 3/casos_de_uso.png)
+🔗 [casos_de_uso.png](Semana%203/casos_de_uso.png)
 
 O diagrama de classes representa as principais entidades do sistema e seus relacionamentos, incluindo Cliente, Pedido, Pagamento, Lojista, Cardápio e Entregador, além de seus principais atributos e métodos.
-🔗 [diagrama_classes.png](Semana 3/diagrama_classes.png)
+🔗 [diagrama_classes.png](Semana%203/diagrama_classes.png)
 
 O diagrama de sequência de Realizar Pedido representa a sequência de interações envolvidas na realização de um pedido no sistema. Esse diagrama foi elaborado por Italo.
-🔗 [sequencia_realizar_pedido.png](Semana 3/sequencia_realizar_pedido.png)
+🔗 [sequencia_realizar_pedido.png](Semana%203/sequencia_realizar_pedido.png)
 
 O diagrama de sequência de Atualizar Status representa a interação entre o Lojista, o PedidoController, o Pedido e o NotificacaoService para a atualização do status de um pedido. Esse diagrama foi elaborado por Vinicius.
-🔗 [sequencia_atualizar_status.png](Semana 3/sequencia_atualizar_status.png)
+🔗 [sequencia_atualizar_status.png](Semana%203/sequencia_atualizar_status.png)
 
 O diagrama de sequência de Cadastrar Item representa a sequência de interações relacionada ao cadastro de um novo item no cardápio. Esse diagrama foi elaborado por Yarlei.
-🔗 [sequencia_cadastrar_item.png](Semana 3/sequencia_cadastrar_item.png)
+🔗 [sequencia_cadastrar_item.png](Semana%203/sequencia_cadastrar_item.png)
 
 ## 6. Modelo de Processo (Semana 4)
 
