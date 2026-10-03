@@ -59,9 +59,14 @@ O diagrama de sequência de Cadastrar Item representa a sequência de interaçõ
 
 ## 6. Modelo de Processo (Semana 4)
 
-Resumo curto do modelo de processo escolhido (cascata, incremental ou ágil) e por quê. A justificativa deve considerar pelo menos a estabilidade dos requisitos e o perfil da equipe, e mencionar brevemente por que os outros modelos foram descartados. Se o grupo optou por uma abordagem ágil, indiquem também qual framework usariam (Scrum, Kanban ou XP), por que ele se adequa ao sistema e como lidariam com o cenário de mudança dentro dele.
+Vamos então ao nosso resumo o grupo optou por utilizar o modelo de processo ágil que a gente achou ser mais adequado ao desenvolvimento do nosso sistema de delivery de comida caseira nesse primeiro momento.  essa nossa escolha Ela acabou sendo motivada pelo fato da Necessidade desses nossos requisitos poderem sofrer necessariamente a atualizações ou alterações ao longo do tempo de desenvolvimento do projeto e esse modelo de processo ágil ele acaba tendo muita praticidade em relação a comunicação entre os integrantes da equipe e a possibilidade de realizar entregas incrementais e melhorias no projeto.
 
-> _(escrever aqui)_
+Agora dentro da modelagem que a gente escolheu como framework e o SCRUM, que vai permitir a nossa equipe  (1 desenvolvedor full stack, 1 assurance quality e 1 Product manager ) mesmo que pequena, organizar o trabalho em três sprints cada uma de 15 dias, E acompanhar a evolução do projeto e adaptar o planejamento de acordo com as novas necessidades identificadas durante o desenvolvimento do projeto.
+
+Justificando assim o modelo que não foi escolhido Os outros dois como o Cascata e o creme Mental é porque a gente acabou pressupondo que que tornaria um pouco um pouco mais difícil a questão de de adaptação a mudanças futuras não que não seriam possíveis, porém mais pelo fato da abordagem ágil acabar sendo mais adaptativa. Enquanto há o modelo incremental ele também poderia ser utilizado, porém a gente vê no Scan a maior facilidade para planejar não planejamento mas o gerenciamento da equipe e acompanhamento das atividades.
+
+E justificando mais um pouco a escolha da modelagem e do Scan nós vemos como os novos casos de exigências que surgiram em relação a leis na Prefeitura vai nos permitir organizar melhor as prioridades e atender às mudanças sem necessidade de realizar todo o planejamento novamente.
+
 
 🔗 [semana4/](semana4/)
 
