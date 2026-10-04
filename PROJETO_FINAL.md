@@ -76,18 +76,25 @@ E justificando mais um pouco a escolha da modelagem e do Scan nós vemos como os
 
 ### O cenário recebido
 
-Colem aqui o cenário correspondente ao tema do grupo.
-
-> _(colar aqui)_
+A prefeitura aprovou uma nova lei de mobilidade urbana que exige que empresas de entrega registrem e comprovem o tempo máximo que um entregador permanece em rota contínua, sob pena de multa.
 
 ### Tipo de manutenção
 
-Identifiquem e nomeiem o tipo de manutenção que esse cenário representa (corretiva, adaptativa, perfectiva ou preventiva) e justifiquem a classificação com base no conteúdo estudado.
-
-> _(escrever aqui)_
+O cenário representa uma manutenção adaptativa, pois o sistema precisa ser modificado para atender a uma nova exigência legal externa. Não é corretiva, pois não existe um erro no sistema; nem perfectiva ou preventiva, pois a mudança não surgiu para melhorar ou prevenir problemas, mas para adequar o sistema à nova legislação.
 
 ### Análise de impacto
 
-Expliquem, em texto corrido, como essa mudança afeta o que vocês já construíram ao longo da disciplina, rastreando quais artefatos das semanas anteriores são atingidos. Vocês são livres para tocar nas áreas que julgarem necessárias, princípios, stakeholders, requisitos, viabilidade, diagramas, ou o modelo de processo, mas justifiquem o raciocínio por trás de cada ajuste, inclusive quando a conclusão for que uma determinada parte não precisa mudar.
+A mudança afeta principalmente os requisitos relacionados às entregas e aos entregadores. Será necessário adicionar uma funcionalidade para registrar o início e o fim da rota, calcular o tempo de permanência e armazenar esses dados para comprovação.
+Nos requisitos não funcionais, será necessário garantir a confiabilidade, segurança e integridade dos registros, evitando alterações indevidas.
 
-> _(escrever aqui)_
+No diagrama de classes, a classe ENTREGADOR poderá ser relacionada a uma nova classe ROTAENTREGA, contendo informações como horário de início, horário de término e duração da rota.
+
+Nos casos de uso, será necessário adicionar ou adaptar funcionalidades relacionadas ao início, encerramento e consulta das rotas. Os casos de uso de cadastro de cliente, pagamento e cadastro de itens do cardápio não são afetados diretamente.
+
+Nos diagramas de sequência, o fluxo de entrega poderá ser ajustado para registrar automaticamente os horários de início e término da rota. Os diagramas de realizar pedido e cadastrar item não precisam de alterações significativas.
+
+A viabilidade do sistema continua mantida, pois o projeto já previa rastreamento da localização dos entregadores. Será necessário apenas ampliar essa funcionalidade para controlar o tempo de rota.
+
+Por fim, o Scrum continua adequado, pois a nova exigência pode ser adicionada ao Product Backlog e priorizada em uma Sprint, sem necessidade de refazer todo o planejamento.
+
+Assim, a mudança afeta principalmente os requisitos, as funcionalidades de entrega, o diagrama de classes, parte dos casos de uso e o backlog, enquanto outras partes do sistema permanecem inalteradas por não terem relação com a nova exigência.
